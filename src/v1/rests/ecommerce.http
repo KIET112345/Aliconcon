@@ -1,0 +1,49 @@
+### add production
+PUT http://localhost:8080/v1/products
+Content-Type: application/json
+
+{
+    "product": {
+        "productId": "1002",
+        "code": "p-1002",
+        "name": "Book abot me",
+        "brand": "amazone",
+        "description": "description about me",
+        "specs": [
+            {
+                "k": "author",
+                "v": "me"
+            }, 
+            {
+                "k": "page",
+                "v": "300"
+            }
+        ]
+    }
+}
+### add inventory
+PUT http://localhost:8080/v1/inventory
+Content-Type: application/json
+
+{
+    "inventory": {
+        "productId": 1001,
+        "quantity": 1000,
+        "reservations": []
+    }
+}
+
+### addToCart
+PUT http://localhost:8080/v1/eccommerce/addToCart
+Content-Type: application/json
+
+{
+    "productId": 1001,
+    "quantity": 2,
+    "userId": 1234
+}
+###
+GET http://localhost:8080/api
+
+
+

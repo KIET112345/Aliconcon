@@ -1,0 +1,70 @@
+13-03-2023	53:1:07 ---- GET---- /v1/services/getMethods/121---Not found!
+13-03-2023	55:1:07 ---- GET---- /v1/services/getMethods/121---Not found!
+18-03-2023	58:22:07 ---- POST---- /v1/users---Cannot destructure property 'email' of 'req.body' as it is undefined.
+18-03-2023	10:25:07 ---- POST---- /v1/users---Cannot destructure property 'email' of 'req.body' as it is undefined.
+18-03-2023	07:26:07 ---- GET---- /v1/services/getStatics/123---Not found!
+18-03-2023	22:29:07 ---- POST---- /v1/users---Cannot destructure property 'email' of 'req.body' as it is undefined.
+18-03-2023	37:29:07 ---- POST---- /v1/users---Cannot destructure property 'email' of 'req.body' as it is undefined.
+18-03-2023	32:31:10 ---- POST---- /v1/users---Cannot destructure property 'email' of 'req.body' as it is undefined.
+18-03-2023	48:32:10 ---- POST---- /v1/users---Cannot destructure property 'email' of 'req.body' as it is undefined.
+18-03-2023	22:33:10 ---- POST---- /v1/users---Cannot destructure property 'email' of 'req.body' as it is undefined.
+18-03-2023	58:35:10 ---- POST---- /v1/users---Cannot read properties of undefined (reading 'email')
+18-03-2023	27:42:10 ---- POST---- /v1/users---Cannot destructure property 'email' of 'req.body' as it is undefined.
+18-03-2023	24:43:10 ---- POST---- /v1/users---Cannot destructure property 'email' of 'req.body' as it is undefined.
+18-03-2023	22:45:10 ---- POST---- /v1/users---Cannot destructure property 'email' of 'req.body' as it is undefined.
+18-03-2023	58:45:10 ---- POST---- /v1/users---Unexpected token } in JSON at position 76
+18-03-2023	08:47:10 ---- POST---- /v1/users---Unexpected token } in JSON at position 76
+18-03-2023	29:48:10 ---- POST---- /v1/users---Unexpected token } in JSON at position 76
+18-03-2023	41:49:10 ---- POST---- /v1/users---Unexpected token } in JSON at position 76
+18-03-2023	21:50:10 ---- POST---- /v1/user---Unexpected token } in JSON at position 76
+18-03-2023	55:53:10 ---- POST---- /v1/users---Unexpected token } in JSON at position 76
+18-03-2023	08:57:10 ---- POST---- /v1/users---users validation failed: userId: Path `userId` is required.
+18-03-2023	01:59:10 ---- POST---- /v1/users---Cannot destructure property 'email' of 'req.body' as it is undefined.
+18-03-2023	10:1:11 ---- POST---- /v1/users---Unexpected token } in JSON at position 76
+18-03-2023	36:9:11 ---- GET---- /v1/services/getStatics/123---Not found!
+18-03-2023	45:9:11 ---- GET---- /v1/services/getStatics/123---Not found!
+18-03-2023	46:9:11 ---- GET---- /favicon.ico---Not found!
+18-03-2023	52:9:11 ---- GET---- /v1/services/getStatics/123---Not found!
+19-03-2023	10:4:12 ---- POST---- /v1/users---users validation failed: userId: Path `userId` is required.
+19-03-2023	27:5:12 ---- POST---- /v1/users---otp is not defined
+19-03-2023	47:5:12 ---- POST---- /v1/users---otp is not defined
+24-03-2023	34:28:10 ---- POST---- /v1/users/verifyOtp---Not found!
+24-03-2023	07:29:10 ---- POST---- /v1/users/verifyOtp---Not found!
+24-03-2023	32:29:10 ---- POST---- /v1/users/verifyOtp---Not found!
+24-03-2023	25:30:10 ---- POST---- /v1/users/verifyOtp---Not found!
+24-03-2023	46:33:10 ---- POST---- /v1/users/verifyOtp---Cannot destructure property 'code' of '(intermediate value)' as it is undefined.
+16-04-2023	24:30:12 ---- PUT---- /v1/products---product validation failed: productId: Path `productId` is required.
+16-04-2023	03:31:12 ---- PUT---- /v1/products---product validation failed: productId: Path `productId` is required.
+16-04-2023	03:32:12 ---- PUT---- /v1/products---product validation failed: productId: Path `productId` is required.
+16-04-2023	55:32:12 ---- PUT---- /v1/products---product validation failed: productId: Path `productId` is required.
+16-04-2023	15:41:08 ---- PUT---- /v1/eccommerce/addToCart---quantity is not defined
+16-04-2023	54:41:08 ---- PUT---- /v1/eccommerce/addToCart---quantity is not defined
+16-04-2023	34:42:08 ---- PUT---- /v1/eccommerce/addToCart---Cast to Number failed for value "NaN" (type number) at path "quantity"
+16-04-2023	00:43:08 ---- PUT---- /v1/eccommerce/addToCart---Cast to Number failed for value "NaN" (type number) at path "quantity"
+16-04-2023	16:44:08 ---- PUT---- /v1/eccommerce/addToCart---Cast to Number failed for value "NaN" (type number) at path "quantity"
+16-04-2023	51:54:09 ---- PUT---- /v1/eccommerce/addToCart---Cast to Number failed for value "NaN" (type number) at path "quantity"
+17-04-2023	46:41:06 ---- PUT---- /v1/eccommerce/addToCart---Cast to Number failed for value "NaN" (type number) at path "quantity"
+17-04-2023	52:43:06 ---- PUT---- /v1/eccommerce/addToCart---Cast to Number failed for value "NaN" (type number) at path "quantity"
+17-04-2023	38:39:08 ---- GET---- /api---req.headers is not a function
+17-04-2023	39:39:08 ---- GET---- /api---req.headers is not a function
+17-04-2023	39:39:08 ---- GET---- /api---req.headers is not a function
+17-04-2023	49:41:08 ---- GET---- /api---incr is not a function
+17-04-2023	50:41:08 ---- GET---- /api---incr is not a function
+18-04-2023	45:39:09 ---- GET---- /api---incr is not a function
+22-05-2023	56:33:03 ---- POST---- /v1/api//shop/signup---Cannot read properties of undefined (reading 'signUp')
+22-05-2023	19:36:03 ---- POST---- /v1/api//shop/signup---Cannot read properties of undefined (reading 'signUp')
+22-05-2023	29:53:03 ---- POST---- /v1/users---users validation failed: userId: Path `userId` is required.
+22-05-2023	51:0:04 ---- GET---- /v1/users---Not found!
+22-05-2023	52:0:04 ---- GET---- /favicon.ico---Not found!
+22-05-2023	52:0:04 ---- GET---- /v1/users---Not found!
+22-05-2023	57:8:04 ---- POST---- /v1/api//shop/signup---AccessService.signUp is not a function
+22-05-2023	44:44:07 ---- POST---- /v1/api//shop/signup---AccessService.signUp is not a function
+06-08-2023	56:4:10 ---- POST---- /v1/api//shop/signup---Cannot set headers after they are sent to the client
+06-08-2023	43:5:10 ---- POST---- /v1/api//shop/signup---Cannot set headers after they are sent to the client
+06-08-2023	26:6:10 ---- POST---- /v1/api//shop/signup---Cannot set headers after they are sent to the client
+06-08-2023	19:7:10 ---- POST---- /v1/api//shop/signup---Cannot set headers after they are sent to the client
+10-08-2023	33:24:09 ---- POST---- /v1/api//shop/signup---Cannot read properties of null (reading 'permissions')
+10-08-2023	05:25:09 ---- POST---- /v1/api//shop/signup---Cannot read properties of null (reading 'permissions')
+06-09-2023	04:7:09 ---- POST---- /v1/api//shop/signup---Shop are already exists
+06-09-2023	53:7:09 ---- POST---- /v1/api//shop/signup---Shop are already exists
+06-09-2023	35:8:09 ---- POST---- /v1/api//shop/signup---Shop are already exists

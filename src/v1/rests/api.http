@@ -1,0 +1,25 @@
+###
+GET http://localhost:8080/v1/services/getStatics/123
+###
+GET http://localhost:8080/v1/services/getMethods/
+###
+GET http://localhost:8080/checkstatus
+###
+POST http://localhost:8080/v1/users
+Content-Type: application/json
+
+{
+    "userName": "TEST2",
+    "email": "TEST2@gmail.com",
+    "userId": 2
+}
+### nếu có dấu , sau 2 thì sẽ bị lỗi::: Unexpected token } in JSON at position
+### nếu không dùng app.use(express.json()) thì sẽ gặp lỗi::: Cannot read properties of undefined (req.body === undefined)
+
+POST http://localhost:8080/v1/users/verifyOtp
+Content-Type: application/json
+
+{
+    "email": "TEST2@gmail.com",
+    "otp": "805906"
+}
