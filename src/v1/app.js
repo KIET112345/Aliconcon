@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 app.use((error, req, res, next) => {
   eventLogs(`${req.method}---- ${req.url}---${error.message}`);
   const statusCode = error.status || 500;
-  return res.status(statusCode).json({
+  res.status(statusCode).json({
     status: "Error",
     code: statusCode,
     message: error.message || "Internal server error",

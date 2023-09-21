@@ -18,7 +18,7 @@ const roleShop = {
 class AccessService {
     static signUp = async ( {name, email, password}) => {
         // try {
-            
+            a
             // step1: check email exist
             const holderShop = await shopModel.findOne({email}).lean();
             if (holderShop) {
