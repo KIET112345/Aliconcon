@@ -96,3 +96,87 @@
 08-09-2023	40:59:08 ---- POST---- /v1/users/resgisterUser---Not Found
 21-09-2023	59:45:07 ---- POST---- /v1/api//shop/signup---a is not defined
 21-09-2023	32:16:09 ---- POST---- /v1/api//shop/signup---Shop are already exists
+27-09-2023	27:39:09 ---- POST---- /v1/api//shop/signup---Shop are already exists
+27-09-2023	37:39:09 ---- POST---- /v1/api//shop/signup---object is not defined
+27-09-2023	49:39:09 ---- POST---- /v1/api//shop/signup---Shop are already exists
+27-09-2023	00:40:09 ---- POST---- /v1/api//shop/signup---object is not defined
+27-09-2023	55:45:09 ---- POST---- /v1/api//shop/signup---Shop are already exists
+27-09-2023	33:51:09 ---- POST---- /v1/api//shop/signup---object is not defined
+30-09-2023	19:7:11 ---- POST---- /v1/api//shop/signup---Unexpected token P in JSON at position 88
+30-09-2023	07:21:11 ---- POST---- /v1/api//shop/signup---Unexpected token P in JSON at position 88
+30-09-2023	14:21:11 ---- POST---- /v1/api//shop/signup---Unexpected token P in JSON at position 88
+30-09-2023	13:11:03 ---- POST---- /v1/api//shop/signup---crypto is not defined
+30-09-2023	53:11:03 ---- POST---- /v1/api//shop/signup---Shop are already exists
+30-09-2023	30:21:03 ---- POST---- /v1/api//shop/login---Shop not registered
+30-09-2023	05:22:03 ---- POST---- /v1/api//shop/login---foundShops is not defined
+30-09-2023	34:22:03 ---- POST---- /v1/api//shop/login---foundShop is not defined
+30-09-2023	43:42:10 ---- POST---- /v1/api//shop/signup---Shop are already exists
+02-10-2023	30:6:07 ---- POST---- /v1/api/shop/login---Shop not registered
+02-10-2023	13:8:07 ---- POST---- /v1/api/shop/signup---Illegal arguments: undefined, number
+02-10-2023	29:8:07 ---- POST---- /v1/api//shop/signup---Shop are already exists
+02-10-2023	06:15:07 ---- POST---- /v1/api//shop/logout---Cannot read properties of undefined (reading 'ObjectId')
+02-10-2023	06:16:07 ---- POST---- /v1/api//shop/logout---Cannot read properties of undefined (reading 'ObjectId')
+02-10-2023	30:17:07 ---- POST---- /v1/api//shop/logout---Class constructor ObjectId cannot be invoked without 'new'
+02-10-2023	53:18:07 ---- POST---- /v1/api//shop/logout---Class constructor ObjectId cannot be invoked without 'new'
+02-10-2023	29:19:07 ---- POST---- /v1/api//shop/logout---Class constructor ObjectId cannot be invoked without 'new'
+02-10-2023	34:19:07 ---- POST---- /v1/api//shop/logout---Class constructor ObjectId cannot be invoked without 'new'
+02-10-2023	08:52:08 ---- POST---- /v1/api//shop/logout---keyTokenModel.remove is not a function
+02-10-2023	16:53:08 ---- POST---- /v1/api//shop/logout---keyTokenModel.remove is not a function
+02-10-2023	57:5:02 ---- POST---- /v1/api//shop/logout---delKey is not defined
+02-10-2023	47:6:02 ---- POST---- /v1/api//shop/logout---not found keystore
+02-10-2023	28:8:02 ---- POST---- /v1/api//shop/logout---not found keystore
+02-10-2023	14:10:10 ---- POST---- /v1/api//shop/logout---invalid signature
+02-10-2023	45:24:10 ---- POST---- /v1/api//shop/logout---not found keystore
+03-10-2023	56:36:06 ---- POST---- /v1/api//shop/login---Invalid request
+03-10-2023	12:37:06 ---- POST---- /v1/api//shop/signup---Invalid request
+03-10-2023	16:37:06 ---- POST---- /v1/api//shop/signup---Invalid request
+03-10-2023	48:21:09 ---- POST---- /v1/api//shop/logout---keyTokenModel.remove is not a function
+05-10-2023	45:41:06 ---- POST---- /v1/api//shop/logout---not found keystore
+05-10-2023	25:42:08 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered
+05-10-2023	15:43:08 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered
+05-10-2023	30:43:08 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 1
+05-10-2023	49:44:08 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 1
+05-10-2023	02:46:08 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 1
+05-10-2023	56:46:08 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+05-10-2023	52:52:08 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+05-10-2023	14:54:08 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+05-10-2023	21:55:08 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+05-10-2023	14:57:08 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+05-10-2023	27:4:09 ---- POST---- /v1/api//shop/handlerRefreshToken---invalid signature
+05-10-2023	32:4:09 ---- POST---- /v1/api//shop/handlerRefreshToken---invalid signature
+05-10-2023	13:6:09 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+05-10-2023	02:9:09 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+05-10-2023	06:18:09 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+05-10-2023	08:19:09 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+05-10-2023	59:24:09 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+05-10-2023	38:28:09 ---- POST---- /v1/api//shop/logout---invalid signature
+05-10-2023	52:29:09 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+05-10-2023	28:30:09 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+06-10-2023	48:25:06 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+06-10-2023	22:48:06 ---- POST---- /v1/api//shop/handlerRefreshToken---Shop not registered 2
+06-10-2023	08:7:07 ---- POST---- /v1/api//shop/handlerRefreshToken---Invalid request
+06-10-2023	56:7:07 ---- POST---- /v1/api//shop/handlerRefreshToken---Invalid request
+06-10-2023	42:28:07 ---- POST---- /v1/api//shop/handlerRefreshToken---Invalid request
+06-10-2023	59:29:07 ---- POST---- /v1/api//shop/handlerRefreshToken---Invalid request
+06-10-2023	16:31:07 ---- POST---- /v1/api//shop/handlerRefreshToken---Invalid request
+06-10-2023	28:33:07 ---- POST---- /v1/api//shop/handlerRefreshToken---Invalid request
+06-10-2023	15:34:07 ---- POST---- /v1/api//shop/handlerRefreshToken---Invalid request
+06-10-2023	35:34:07 ---- POST---- /v1/api//shop/handlerRefreshToken---Invalid request
+06-10-2023	39:34:07 ---- POST---- /v1/api//shop/handlerRefreshToken---Invalid request
+06-10-2023	38:0:08 ---- POST---- /v1/api/shop/login---Shop not registered
+06-10-2023	45:0:08 ---- POST---- /v1/api/shop/login---Shop not registered
+06-10-2023	34:3:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---Invalid request
+06-10-2023	32:5:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---Invalid request
+06-10-2023	04:6:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---Invalid request
+06-10-2023	51:6:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---holderToken is not defined
+06-10-2023	52:7:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---Cannot read properties of undefined (reading 'refreshToken')
+06-10-2023	19:9:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---Cannot read properties of undefined (reading 'refreshToken')
+06-10-2023	57:9:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---refreshToken is not defined
+06-10-2023	59:10:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---Cannot read properties of undefined (reading 'refreshToken')
+06-10-2023	15:11:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---foundShop.update is not a function
+06-10-2023	04:13:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---foundShop.update is not a function
+06-10-2023	46:13:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---foundShop.findAndUpdate is not a function
+06-10-2023	12:16:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---keyStore.update is not a function
+06-10-2023	59:20:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---keyStore.update is not a function
+06-10-2023	17:27:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---keyStore.updateOne is not a function
+06-10-2023	41:37:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---jwt malformed
