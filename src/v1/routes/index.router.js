@@ -10,8 +10,7 @@ const {
   regisUser,
   verifyOtp,
 } = require("../controllers/user.controller");
-// Controller production
-const { addProduct } = require("../controllers/product.controller");
+
 // Controller inventory
 const { addInventory } = require("../controllers/inventory.controller");
 // controller eccommerce
@@ -28,7 +27,6 @@ router.get("/checkstatus", (req, res, next) => {
 
 router.get("/v1/services/getMethods", getMethods);
 router.get("/v1/services/getStatics", getStatics);
-router.put('/v1/products', addProduct);
 router.put('/v1/inventory', addInventory);
 router.put('/v1/eccommerce/addToCart', addToCart);
 router.use("/v1/users", require("./users/index"));
