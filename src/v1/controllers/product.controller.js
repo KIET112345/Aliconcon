@@ -1,17 +1,18 @@
 "use strict";
 //services
-const { addProduct } = require("../services/product.service");
+const ProductService = require("../services/product.service");
+const { SuccessResponse } = require("../core/success.response");
 
-var that = module.exports = {
-  addProduct: async (req, res, next) => {
-    try {
-      // note need param req
-      const { product } = req.body;
-      return res.json({
-        elements: await addProduct(product),
-      });
-    } catch (error) {
-      next(error);
-    }
-  },
-};
+class ProductController {
+  createProduct = async (req, res, next) => {
+    new SuccessResponse({
+      message: "Create new Product success!",
+      metadata: await ProductService.createProduct(
+        req.body.product_type,
+        {...req.body, product_shop: req.user.userId}
+      ),
+    }).send(res);
+  };
+}
+
+module.exports = new ProductController();

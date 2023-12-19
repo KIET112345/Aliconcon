@@ -62,7 +62,6 @@ const authentication = asyncHandler( async(req, res, next) => {
 
 const authenticationV2 = asyncHandler( async(req, res, next) => {
     const userId = req.headers[HEADER.CLIENT_ID];
-    console.log("userId", userId)
     const refeshToken = req.headers[HEADER.REFRESHTOKEN];
 
     if (!userId) {
@@ -73,7 +72,6 @@ const authenticationV2 = asyncHandler( async(req, res, next) => {
     if (!keyStore) {
         throw new NotFoundError("not found keystore");
     }
-    console.log("refeshToken", refeshToken);
     if (!refeshToken) {
         throw new AuthFailureError("Invalid request");
     }
