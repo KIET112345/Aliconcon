@@ -34,7 +34,7 @@ router.use("/v1/users", require("./users/index"));
 router.use(apiKey);
 // check permissions
 router.use(permission('0000'));
+router.use('/v1/api/product', require("./product/index"));
 router.use('/v1/api', require("./access/index"));
-router.use('/v1/api', require("./product/index"));
 
 module.exports = router;

@@ -180,3 +180,103 @@
 06-10-2023	59:20:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---keyStore.update is not a function
 06-10-2023	17:27:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---keyStore.updateOne is not a function
 06-10-2023	41:37:08 ---- POST---- /v1/api/shop/handlerRefreshtoken---jwt malformed
+19-12-2023	50:28:10 ---- POST---- /v1/api/product---Invalid request
+19-12-2023	08:29:10 ---- POST---- /v1/api/product---Invalid request
+19-12-2023	49:31:10 ---- POST---- /v1/api/product---Invalid request
+19-12-2023	26:32:10 ---- POST---- /v1/api/product---Invalid request
+19-12-2023	40:32:10 ---- POST---- /v1/api/product---Invalid request
+19-12-2023	14:34:10 ---- POST---- /v1/api/product---Invalid request
+19-12-2023	12:35:10 ---- POST---- /v1/api/product---Invalid request
+19-12-2023	48:35:10 ---- POST---- /v1/api/product---Invalid request
+19-12-2023	09:39:10 ---- POST---- /v1/api//shop/logout---Invalid request
+19-12-2023	42:40:10 ---- POST---- /v1/api//shop/logout---Invalid request
+19-12-2023	47:45:10 ---- POST---- /v1/api//shop/logout---Invalid request
+19-12-2023	44:46:10 ---- POST---- /v1/api//shop/logout---Invalid request
+19-12-2023	42:47:10 ---- POST---- /v1/api//shop/logout---Invalid request
+19-12-2023	19:48:10 ---- POST---- /v1/api//shop/logout---invalid signature
+19-12-2023	53:44:03 ---- POST---- /v1/api//shop/handlerRefreshToken---Invalid request
+19-12-2023	44:51:03 ---- POST---- /v1/api//shop/logout---invalid signature
+19-12-2023	59:51:03 ---- POST---- /v1/api//shop/handlerRefreshToken---Some things went wrong, please relogin again
+19-12-2023	43:52:03 ---- POST---- /v1/api/product---Not Found
+19-12-2023	59:4:04 ---- POST---- /v1/api/product---invalid signature
+19-12-2023	19:8:04 ---- POST---- /v1/api/product---Not Found
+19-12-2023	46:10:04 ---- POST---- /v1/api/product---Not Found
+19-12-2023	11:12:04 ---- POST---- /v1/api/product---Not Found
+19-12-2023	35:13:04 ---- POST---- /v1/api/product---Not Found
+19-12-2023	58:47:05 ---- POST---- /v1/api/product---Cannot read properties of undefined (reading 'create')
+19-12-2023	25:50:05 ---- POST---- /v1/api/product---Cannot read properties of undefined (reading 'create')
+19-12-2023	21:53:05 ---- POST---- /v1/api/product---Cannot read properties of undefined (reading 'create')
+19-12-2023	48:54:05 ---- POST---- /v1/api/product---Product validation failed: product_atributes: Path `product_atributes` is required., product_price: Path `product_price` is required.
+20-12-2023	33:58:08 ---- POST---- /v1/api/product---slugify: string argument expected
+20-12-2023	31:2:09 ---- POST---- /v1/api/product---slugify: string argument expected
+20-12-2023	34:5:09 ---- POST---- /v1/api/product---slugify: string argument expected
+20-12-2023	24:8:09 ---- POST---- /v1/api/product---slugify: string argument expected
+20-12-2023	43:8:09 ---- POST---- /v1/api/product---slugify: string argument expected
+21-12-2023	09:20:10 ---- GET---- /v1/api/product/draft---Cannot read properties of undefined (reading 'userId')
+22-12-2023	52:8:10 ---- PUT---- /v1/api/product/publish?id=6582f6f06ced356654d9d882---Not Found
+22-12-2023	55:11:10 ---- POST---- /v1/api/product/publish?id=6582f6f06ced356654d9d882---Not Found
+22-12-2023	52:12:10 ---- GET---- /v1/api/product/draft/all---Not Found
+22-12-2023	01:26:10 ---- POST---- /v1/api/product/publish?id=6582f6f06ced356654d9d882---Not Found
+22-12-2023	57:29:10 ---- POST---- /v1/api/product/publish?id=6582f6f06ced356654d9d882---Not Found
+27-12-2023	09:51:08 ---- GET---- /v1/api/product/draft/all---jwt malformed
+27-12-2023	41:51:08 ---- GET---- /v1/api/product/draft/all---jwt malformed
+27-12-2023	08:42:09 ---- GET---- /v1/api/product/draft/all---jwt malformed
+27-12-2023	30:45:09 ---- GET---- /v1/api/product/draft/all---jwt malformed
+27-12-2023	18:47:09 ---- GET---- /v1/api/product/draft/all---jwt malformed
+27-12-2023	31:52:09 ---- GET---- /v1/api/product/draft/all---jwt malformed
+27-12-2023	05:53:09 ---- GET---- /v1/api/product/draft/all---jwt malformed
+27-12-2023	01:58:09 ---- GET---- /v1/api/product/draft/all---jwt malformed
+27-12-2023	58:0:10 ---- GET---- /v1/api/product/draft/all---jwt malformed
+28-12-2023	57:18:07 ---- POST---- /v1/api/product/publish?id=6582f6f06ced356654d9d882---Not Found
+28-12-2023	40:21:07 ---- GET---- /v1/api/product/publish/all---Invalid request
+28-12-2023	11:42:08 ---- POST---- /v1/api/product/published?id=6582f6f06ced356654d9d882---Not Found
+28-12-2023	22:46:08 ---- POST---- /v1/api/product/publish/6582f6f06ced356654d9d882---Class constructor ObjectId cannot be invoked without 'new'
+28-12-2023	48:47:08 ---- POST---- /v1/api/product/publish/6582f6f06ced356654d9d882---Class constructor ObjectId cannot be invoked without 'new'
+28-12-2023	36:49:08 ---- POST---- /v1/api/product/publish/6582f6f06ced356654d9d882---Class constructor ObjectId cannot be invoked without 'new'
+28-12-2023	10:51:08 ---- POST---- /v1/api/product/publish/6582f6f06ced356654d9d882---Class constructor ObjectId cannot be invoked without 'new'
+28-12-2023	11:58:08 ---- POST---- /v1/api/product/publish/6582f6f06ced356654d9d882---Class constructor ObjectId cannot be invoked without 'new'
+28-12-2023	23:59:08 ---- POST---- /v1/api/product/publish/6582f6f06ced356654d9d882---product.update is not a function
+28-12-2023	56:59:08 ---- POST---- /v1/api/product/publish/6582f6f06ced356654d9d882---Performing an update on the path '_id' would modify the immutable field '_id'
+28-12-2023	56:7:09 ---- POST---- /v1/api/product---invalid signature
+28-12-2023	24:8:09 ---- POST---- /v1/api/product---Clothing validation failed: brand: Path `brand` is required.
+28-12-2023	01:9:09 ---- POST---- /v1/api/product---Invalid product type: Furnitures
+28-12-2023	19:10:09 ---- POST---- /v1/api/product/publish/658cd8d3053960066c74df74---product.update is not a function
+28-12-2023	01:55:09 ---- GET---- /v1/api/product/search/but---Invalid request
+28-12-2023	38:0:10 ---- GET---- /v1/api/product/search/but---Invalid request
+28-12-2023	15:1:10 ---- GET---- /v1/api/product/search/but---Invalid request
+28-12-2023	18:3:10 ---- GET---- /v1/api/product/search/but---Not Found
+28-12-2023	58:3:10 ---- GET---- /v1/api/product/search/but---Invalid request
+28-12-2023	02:4:10 ---- GET---- /v1/api/product/search/but---FieldPath field names may not start with '$'.
+28-12-2023	46:8:10 ---- GET---- /v1/api/product/search/but---Invalid sort value: { $score: [object Object] }
+28-12-2023	02:9:10 ---- GET---- /v1/api/product/search/but---Missing expected field "$search"
+28-12-2023	30:9:10 ---- GET---- /v1/api/product/search/but---FieldPath field names may not start with '$'.
+28-12-2023	54:9:10 ---- GET---- /v1/api/product/search/but---unknown operator: $search
+28-12-2023	15:10:10 ---- GET---- /v1/api/product/search/but---FieldPath field names may not start with '$'.
+28-12-2023	25:10:10 ---- GET---- /v1/api/product/search/but---unknown operator: $search
+28-12-2023	55:14:10 ---- GET---- /v1/api/product/search/but---Invalid request
+28-12-2023	59:15:10 ---- GET---- /v1/api/product/search/but---FieldPath field names may not start with '$'.
+29-12-2023	15:39:08 ---- POST---- /v1/api/shop/login---Invalid request
+29-12-2023	35:39:08 ---- POST---- /v1/api/shop/login---Invalid request
+29-12-2023	06:40:08 ---- POST---- /v1/api/shop/login---Invalid request
+29-12-2023	34:40:08 ---- POST---- /v1/api/shop/login---Invalid request
+29-12-2023	32:43:08 ---- POST---- /v1/api/shop/login---Invalid request
+29-12-2023	17:46:08 ---- GET---- /v1/api/product/search/High%20quality%20denim%20jeans---Invalid request
+29-12-2023	56:47:08 ---- GET---- /v1/api/product/list---Invalid request
+29-12-2023	01:49:08 ---- GET---- /v1/api/product/search/High%20quality%20denim%20jeans---Invalid request
+29-12-2023	14:15:09 ---- POST---- /v1/api/product/publish/658e2b8f71ad7669c22f2ad6---Performing an update on the path '_id' would modify the immutable field '_id'
+29-12-2023	04:16:09 ---- POST---- /v1/api/product/publish/658e2b8f71ad7669c22f2ad6---Performing an update on the path '_id' would modify the immutable field '_id'
+29-12-2023	15:17:09 ---- POST---- /v1/api/product/publish/658e2b8f71ad7669c22f2ad6---Performing an update on the path '_id' would modify the immutable field '_id'
+29-12-2023	57:17:09 ---- POST---- /v1/api/product/publish/658e2b8f71ad7669c22f2ad6---Performing an update on the path '_id' would modify the immutable field '_id'
+29-12-2023	41:30:09 ---- POST---- /v1/api/product/publish/658e2b8f71ad7669c22f2ad6---Performing an update on the path '_id' would modify the immutable field '_id'
+29-12-2023	24:2:02 ---- PATCH---- /v1/api/product/658cd8d3053960066c74df74---Invalid request
+29-12-2023	55:4:02 ---- PATCH---- /v1/api/product/658cd8d3053960066c74df74---Invalid product type: undefined
+29-12-2023	42:5:02 ---- PATCH---- /v1/api/product/658cd8d3053960066c74df74---Parameter "filter" to findOneAndUpdate() must be an object, got "658cd8d3053960066c74df74" (type string)
+29-12-2023	46:13:02 ---- PATCH---- /v1/api/product/658cd8d3053960066c74df74---Parameter "filter" to findOneAndUpdate() must be an object, got "658cd8d3053960066c74df74" (type string)
+29-12-2023	26:17:02 ---- PATCH---- /v1/api/product/658cd8d3053960066c74df74---Parameter "filter" to findOneAndUpdate() must be an object, got "658cd8d3053960066c74df74" (type string)
+29-12-2023	58:26:02 ---- PATCH---- /v1/api/product/658cd8d3053960066c74df74---Parameter "filter" to findOneAndUpdate() must be an object, got "658cd8d3053960066c74df74" (type string)
+29-12-2023	15:34:02 ---- PATCH---- /v1/api/product/658cd8d3053960066c74df74---Parameter "filter" to findOneAndUpdate() must be an object, got "658cd8d3053960066c74df74" (type string)
+29-12-2023	05:52:02 ---- PATCH---- /v1/api/product/658cd8d3053960066c74df74---Found non-callable @@iterator
+29-12-2023	07:0:03 ---- PATCH---- /v1/api/product/658cd8d3053960066c74df74---Cannot destructure property 'product_name' of 'undefined' as it is undefined.
+29-12-2023	38:0:03 ---- PATCH---- /v1/api/product/658cd8d3053960066c74df74---Cannot destructure property 'product_name' of 'undefined' as it is undefined.
+29-12-2023	38:20:09 ---- POST---- /v1/api/product/publish/658ed5a27c2ffd86b6081399---Performing an update on the path '_id' would modify the immutable field '_id'
+29-12-2023	30:24:09 ---- POST---- /v1/api/product/publish/658ed5a27c2ffd86b6081399---Performing an update on the path '_id' would modify the immutable field '_id'
