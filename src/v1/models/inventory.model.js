@@ -1,13 +1,15 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model, Types } = require("mongoose");
 const inventorySchema = new Schema(
   {
-    productId: Number,
-    quantity: Number,
-    reservations: Array,
+    inven_productId: {type: Schema.Types.ObjectId, ref: 'Product'},
+    inven_location: { type: String, default: 'Unknown' },
+    inven_stock: {type: Number, required: true},
+    reservations: {type: Array, default: []},
+    inven_shopId: {type: Schema.Types.ObjectId, ref: 'Shop'},
     create_at: { type: Date, default: Date.now },
   },
   {
-    collection: "inventory",
+    collection: "inventories",
     timestamps: true,
   }
 );

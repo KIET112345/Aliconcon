@@ -26,7 +26,7 @@ const productSchema = new Schema(
     },
     product_variations: { type: Array, default: [] },
     isDraft: { type: Boolean, default: true, index: true, select: false }, // bien khong nen select ra nen khong can dat ten la product_
-    isPublish: { type: Boolean, default: false, index: true, select: false },
+    isPublish: { type: Boolean, default: false, index: true, select: false }, //select = false when find, findOne not show this field
   },
   {
     collection: COLLECTION_NAME,

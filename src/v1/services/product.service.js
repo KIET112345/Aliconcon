@@ -7,6 +7,7 @@ const {
   electronic,
   furniture,
 } = require("../models/product.model");
+const { insertInventory } = require("../models/repositories/inventory.repo");
 const {
   findAllProductForShop,
   publishProductByShop,
@@ -24,6 +25,7 @@ class ProductFactory {
   static productRegistry = {};
   static registerProductType(type, classRef) {
     ProductFactory.productRegistry[type] = classRef;
+    return ProductFactory.productRegistry[type];
   }
   // creaate product
   static async createProduct(type, payload) {
@@ -108,7 +110,11 @@ class Product {
 
   // create product
   async createProduct(product_id) {
-    return await product.create({ ...this, _id: product_id });
+    const result =  await product.create({ ...this, _id: product_id });
+    if (product) {
+      insertInventory({ productId: result._id, shopId: this.product_shop, stock: this.product_quantity})
+    }
+    return product;
   }
   //update product
   async updateProduct(productId, bodyUpdate) {
@@ -143,7 +149,7 @@ class Clothing extends Product {
         model: clothing,
       });
     }
-    const productUpdate = await super.updateProduct(productId, objectParams);
+    const productUpdate = await super.updateProduct(productId, updateNestedObjectParse(objectParams));
     return productUpdate;
   }
 }
@@ -159,6 +165,24 @@ class Electronics extends Product {
     const newProduct = await super.createProduct(newElectronics._id);
     if (!newProduct) throw new BadRequestError("Create new product Error!");
     return newProduct;
+  }
+
+  async updateProduct(productId) {
+    //1. remove attri has null or undefined
+    //2. check where is update?
+    console.log('[1]::', this)
+    const objectParams = removeNullOrUndefinedObject(this);
+    console.log('[2]::', objectParams)
+
+    if (objectParams.product_attributes) {
+      await updateProductById({
+        productId,
+        bodyUpdate: objectParams,
+        model: electronic,
+      });
+    }
+    const productUpdate = await super.updateProduct(productId, updateNestedObjectParse(objectParams));
+    return productUpdate;
   }
 }
 
