@@ -1,4 +1,4 @@
-echo Running lint staged for code
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
 npx lint-staged
-branchName=$(git branch --show-current)
-echo $branchName
