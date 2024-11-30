@@ -1,0 +1,4 @@
+echo Running lint staged for code
+npc lint-staged
+branchName=$(git branch --show-current)
+echo $branchName
