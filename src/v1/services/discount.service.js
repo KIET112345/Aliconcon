@@ -27,7 +27,7 @@ class DiscountService {
     } = payload;
 
     if (new Date() < new Date(start_date) || new Date() > new Date(end_date)) {
-      throw NotFoundError("Discount code has expired");
+      throw NotFoundError("Discount code has expired     ");
     }
 
     const foundDiscount = await discount
