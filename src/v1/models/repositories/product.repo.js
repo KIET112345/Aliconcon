@@ -1,13 +1,13 @@
-"use strict";
+'use strict';
 
-const { getSelectData, unGetSelectData } = require("../../utils");
+const { getSelectData, unGetSelectData } = require('../../utils');
 const {
   product,
   clothing,
   electronic,
   furniture,
-} = require("../product.model");
-const { Types } = require("mongoose");
+} = require('../product.model');
+const { Types } = require('mongoose');
 
 //Update //
 const publishProductByShop = async ({ product_shop, product_id }) => {
@@ -51,7 +51,7 @@ const updateProductById = async ({
 const queryProduct = async ({ query, limit, skip }) => {
   return await product
     .find(query)
-    .populate("product_shop", "name email -_id")
+    .populate('product_shop', 'name email -_id')
     .sort({ update: -1 })
     .skip(skip)
     .limit(limit)
@@ -75,20 +75,20 @@ const searchProducts = async ({ keySearch }) => {
         $text: { $search: regexSearch },
       },
       {
-        score: { $meta: "textScore" },
+        score: { $meta: 'textScore' },
       }
     )
     .sort({
-      score: { $meta: "textScore" },
+      score: { $meta: 'textScore' },
     })
     .lean();
-  console.log("result::", result);
+  console.log('result::', result);
   return result;
 };
 
 const findAllProduct = async ({ limit, sort, page, filter, select }) => {
   const skip = (page - 1) * limit;
-  const sortBy = sort === "ctime" ? { _id: -1 } : { _id: 1 };
+  const sortBy = sort === 'ctime' ? { _id: -1 } : { _id: 1 };
   const products = await product
     .find(filter)
     .sort(sortBy)
@@ -117,5 +117,5 @@ module.exports = {
   searchProducts,
   findAllProduct,
   findProduct,
-  updateProductById
+  updateProductById,
 };

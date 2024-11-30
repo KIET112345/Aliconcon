@@ -280,3 +280,10 @@
 29-12-2023	38:0:03 ---- PATCH---- /v1/api/product/658cd8d3053960066c74df74---Cannot destructure property 'product_name' of 'undefined' as it is undefined.
 29-12-2023	38:20:09 ---- POST---- /v1/api/product/publish/658ed5a27c2ffd86b6081399---Performing an update on the path '_id' would modify the immutable field '_id'
 29-12-2023	30:24:09 ---- POST---- /v1/api/product/publish/658ed5a27c2ffd86b6081399---Performing an update on the path '_id' would modify the immutable field '_id'
+26-11-2024	39:18:09 ---- POST---- /v1/api/product---Invalid request
+26-11-2024	40:22:09 ---- POST---- /v1/api/product---Invalid request
+26-11-2024	31:23:09 ---- POST---- /v1/api/product---Cannot access 'product' before initialization
+26-11-2024	38:28:09 ---- POST---- /v1/api/product---Product validation failed: product_price: Path `product_price` is required.
+26-11-2024	49:36:09 ---- POST---- /v1/api/product---jwt malformed
+26-11-2024	09:14:10 ---- POST---- /v1/api/product---jwt malformed
+26-11-2024	07:28:10 ---- PUT---- /v1/inventory---inventory validation failed: inven_stock: Path `inven_stock` is required.

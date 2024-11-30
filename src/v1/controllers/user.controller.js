@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Service
 const {
@@ -6,22 +6,18 @@ const {
   getMethods,
   createUser,
   regisUser,
-  verifyOtp
-} = require("../services/user.service.js");
+  verifyOtp,
+} = require('../services/user.service.js');
 
 var that = (module.exports = {
   verifyOtp: async (req, res, next) => {
     try {
       const { email, otp } = req.body;
-      const {
-        code,
-        element,
-        message
-      } = await verifyOtp({email, otp});
+      const { code, element, message } = await verifyOtp({ email, otp });
       res.status(code).json({
         code,
         element,
-        message
+        message,
       });
     } catch (error) {
       console.error(error);
@@ -35,7 +31,7 @@ var that = (module.exports = {
       return res.status(code).json({
         code,
         message,
-        element
+        element,
       });
     } catch (error) {
       console.log(error);
@@ -44,7 +40,7 @@ var that = (module.exports = {
   },
   createUser: async (req, res, next) => {
     try {
-      console.log("req.body", req.body);
+      console.log('req.body', req.body);
       const { email, userName, userId } = req.body;
       res.json({
         elements: await createUser({ email, userName, userId }),

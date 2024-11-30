@@ -1,6 +1,6 @@
-const { Types} = require('mongoose');
+const { Types } = require('mongoose');
 
-const covertToObjectIdMongodb = id => Types.ObjectId(id);
+const covertToObjectIdMongodb = (id) => Types.ObjectId(id);
 
 const getSelectData = (select = []) => {
   return Object.fromEntries(select.map((el) => [el, 1]));
@@ -21,9 +21,9 @@ const removeNullOrUndefinedObject = (obj) => {
 
 const updateNestedObjectParse = (obj) => {
   const final = {};
-  console.log("obj", obj)
+  console.log('obj', obj);
   Object.keys(obj).forEach((k) => {
-    if (typeof obj[k] === "Object" && !Array.isArray(obj[k])) {
+    if (typeof obj[k] === 'Object' && !Array.isArray(obj[k])) {
       const response = updateNestedObjectParse(obj[k]);
       Object.keys(response).forEach((a) => {
         final[`${k}.${a}`] = response[a];
@@ -32,7 +32,7 @@ const updateNestedObjectParse = (obj) => {
       final[k] = obj[k];
     }
   });
-  console.log('final', final)
+  console.log('final', final);
   return final;
 };
 module.exports = {
@@ -40,5 +40,5 @@ module.exports = {
   unGetSelectData,
   removeNullOrUndefinedObject,
   updateNestedObjectParse,
-  covertToObjectIdMongodb
+  covertToObjectIdMongodb,
 };

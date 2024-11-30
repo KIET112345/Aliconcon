@@ -1,19 +1,19 @@
-const inventory = require("../inventory.model");
+const inventory = require('../inventory.model');
 
 const insertInventory = async ({
   productId,
   shopId,
-  location = "Unknown",
+  location = 'Unknown',
   stock,
 }) => {
-    await inventory.create({
-        inven_productId: productId,
-        inven_shopId: shopId,
-        inven_location: location,
-        inven_stock: stock
-    })
+  await inventory.create({
+    inven_productId: productId,
+    inven_shopId: shopId,
+    inven_location: location,
+    inven_stock: stock,
+  });
 };
 
 module.exports = {
-    insertInventory
-}
+  insertInventory,
+};

@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 const StatusCode = {
   OK: 200,
   CREATED: 201,
 };
 const ReasonStatusCode = {
-  OK: "success",
-  CREATED: "created",
+  OK: 'success',
+  CREATED: 'created',
 };
 
 class SuccessResponse {
@@ -27,7 +27,7 @@ class SuccessResponse {
 
 class OK extends SuccessResponse {
   constructor({ message, metadata }) {
-    super({message, metadata});
+    super({ message, metadata });
   }
 }
 
@@ -38,7 +38,7 @@ class CREATED extends SuccessResponse {
     reasonStatusCode = ReasonStatusCode.CREATED,
     metadata,
   }) {
-    super({message, statusCode, reasonStatusCode, metadata});
+    super({ message, statusCode, reasonStatusCode, metadata });
   }
 }
 

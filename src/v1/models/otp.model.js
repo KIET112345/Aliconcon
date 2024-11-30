@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 const otpSchema = new Schema(
   {
     email: String,
@@ -6,7 +6,7 @@ const otpSchema = new Schema(
     time: { type: Date, default: Date.now, index: { expires: 20 } },
   },
   {
-    collection: "otp",
+    collection: 'otp',
   }
 );
 module.exports = model('otp', otpSchema);

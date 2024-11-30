@@ -1,13 +1,13 @@
-"use strict";
+'use strict';
 
-const { BadRequestError } = require("../core/error.response");
+const { BadRequestError } = require('../core/error.response');
 const {
   product,
   clothing,
   electronic,
   furniture,
-} = require("../models/product.model");
-const { insertInventory } = require("../models/repositories/inventory.repo");
+} = require('../models/product.model');
+const { insertInventory } = require('../models/repositories/inventory.repo');
 const {
   findAllProductForShop,
   publishProductByShop,
@@ -17,8 +17,11 @@ const {
   findAllProduct,
   findProduct,
   updateProductById,
-} = require("../models/repositories/product.repo");
-const { removeNullOrUndefinedObject, updateNestedObjectParse } = require("../utils");
+} = require('../models/repositories/product.repo');
+const {
+  removeNullOrUndefinedObject,
+  updateNestedObjectParse,
+} = require('../utils');
 
 //define Factory class to create product
 class ProductFactory {
@@ -68,7 +71,7 @@ class ProductFactory {
 
   static async findAllProduct({
     limit = 50,
-    sort = "ctime",
+    sort = 'ctime',
     page = 1,
     filter = { isPublish: true },
   }) {
@@ -77,12 +80,12 @@ class ProductFactory {
       sort,
       page,
       filter,
-      select: ["product_name", "product_price", "product_thumb"],
+      select: ['product_name', 'product_price', 'product_thumb'],
     });
   }
 
   static async findProduct({ product_id }) {
-    return await findProduct({ product_id, unSelect: ["__v"] });
+    return await findProduct({ product_id, unSelect: ['__v'] });
   }
 }
 
@@ -110,9 +113,13 @@ class Product {
 
   // create product
   async createProduct(product_id) {
-    const result =  await product.create({ ...this, _id: product_id });
+    const result = await product.create({ ...this, _id: product_id });
     if (product) {
-      insertInventory({ productId: result._id, shopId: this.product_shop, stock: this.product_quantity})
+      insertInventory({
+        productId: result._id,
+        shopId: this.product_shop,
+        stock: this.product_quantity,
+      });
     }
     return product;
   }
@@ -129,18 +136,18 @@ class Clothing extends Product {
       ...this.product_attributes,
       product_shop: this.product_shop,
     });
-    if (!newClothing) throw new BadRequestError("Create new Clothing Error!");
+    if (!newClothing) throw new BadRequestError('Create new Clothing Error!');
     const newProduct = await super.createProduct(newClothing._id);
-    if (!newProduct) throw new BadRequestError("Create new product Error!");
+    if (!newProduct) throw new BadRequestError('Create new product Error!');
     return newProduct;
   }
 
   async updateProduct(productId) {
     //1. remove attri has null or undefined
     //2. check where is update?
-    console.log('[1]::', this)
+    console.log('[1]::', this);
     const objectParams = removeNullOrUndefinedObject(this);
-    console.log('[2]::', objectParams)
+    console.log('[2]::', objectParams);
 
     if (objectParams.product_attributes) {
       await updateProductById({
@@ -149,7 +156,10 @@ class Clothing extends Product {
         model: clothing,
       });
     }
-    const productUpdate = await super.updateProduct(productId, updateNestedObjectParse(objectParams));
+    const productUpdate = await super.updateProduct(
+      productId,
+      updateNestedObjectParse(objectParams)
+    );
     return productUpdate;
   }
 }
@@ -161,18 +171,18 @@ class Electronics extends Product {
       product_shop: this.product_shop,
     });
     if (!newElectronics)
-      throw new BadRequestError("Create new newElectronic Error!");
+      throw new BadRequestError('Create new newElectronic Error!');
     const newProduct = await super.createProduct(newElectronics._id);
-    if (!newProduct) throw new BadRequestError("Create new product Error!");
+    if (!newProduct) throw new BadRequestError('Create new product Error!');
     return newProduct;
   }
 
   async updateProduct(productId) {
     //1. remove attri has null or undefined
     //2. check where is update?
-    console.log('[1]::', this)
+    console.log('[1]::', this);
     const objectParams = removeNullOrUndefinedObject(this);
-    console.log('[2]::', objectParams)
+    console.log('[2]::', objectParams);
 
     if (objectParams.product_attributes) {
       await updateProductById({
@@ -181,7 +191,10 @@ class Electronics extends Product {
         model: electronic,
       });
     }
-    const productUpdate = await super.updateProduct(productId, updateNestedObjectParse(objectParams));
+    const productUpdate = await super.updateProduct(
+      productId,
+      updateNestedObjectParse(objectParams)
+    );
     return productUpdate;
   }
 }
@@ -193,9 +206,9 @@ class Furniture extends Product {
       product_shop: this.product_shop,
     });
     if (!newFurniture)
-      throw new BadRequestError("Create new newElectronic Error!");
+      throw new BadRequestError('Create new newElectronic Error!');
     const newProduct = await super.createProduct(newFurniture._id);
-    if (!newProduct) throw new BadRequestError("Create new product Error!");
+    if (!newProduct) throw new BadRequestError('Create new product Error!');
     return newProduct;
   }
 
@@ -211,15 +224,18 @@ class Furniture extends Product {
         model: furniture,
       });
     }
-    const productUpdate = await super.updateProduct(productId, updateNestedObjectParse(objectParams));
+    const productUpdate = await super.updateProduct(
+      productId,
+      updateNestedObjectParse(objectParams)
+    );
     return productUpdate;
   }
 }
 
 // Register product types
 
-ProductFactory.registerProductType("Electronics", Electronics);
-ProductFactory.registerProductType("Clothing", Clothing);
-ProductFactory.registerProductType("Furniture", Furniture);
+ProductFactory.registerProductType('Electronics', Electronics);
+ProductFactory.registerProductType('Clothing', Clothing);
+ProductFactory.registerProductType('Furniture', Furniture);
 
 module.exports = ProductFactory;

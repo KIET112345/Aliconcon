@@ -1,9 +1,9 @@
-"use strict";
+'use strict';
 // models
-const _cart = require("../models/cart.model");
-const _inventory = require("../models/inventory.model");
+const _cart = require('../models/cart.model');
+const _inventory = require('../models/inventory.model');
 
-var that = module.exports = {
+var that = (module.exports = {
   addToCart: async ({ productId, quantity, userId }) => {
     const stock = await _inventory.updateOne(
       {
@@ -23,7 +23,7 @@ var that = module.exports = {
         },
       }
     );
-    console.log("add stock::", stock);
+    console.log('add stock::', stock);
     if (stock.modifiedCount) {
       // add to cart
       const addToCart = await _cart.findOneAndUpdate(
@@ -43,8 +43,8 @@ var that = module.exports = {
           new: true,
         }
       );
-      console.log("addToCart::", addToCart);
+      console.log('addToCart::', addToCart);
       return 1;
     }
   },
-};
+});

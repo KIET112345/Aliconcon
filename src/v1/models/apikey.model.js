@@ -1,7 +1,7 @@
-"use strict";
-const { model, Schema } = require("mongoose");
-const DOCUMENT_NAME = "ApiKey";
-const COLLECTION_NAME = "ApiKeys";
+'use strict';
+const { model, Schema } = require('mongoose');
+const DOCUMENT_NAME = 'ApiKey';
+const COLLECTION_NAME = 'ApiKeys';
 const apiKeySchema = new Schema(
   {
     key: {
@@ -16,7 +16,7 @@ const apiKeySchema = new Schema(
     permissions: {
       type: [String],
       required: true,
-      enum: ["0000", "1111", "2222", "3333"],
+      enum: ['0000', '1111', '2222', '3333'],
     },
   },
   {

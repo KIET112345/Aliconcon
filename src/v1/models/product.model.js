@@ -1,7 +1,7 @@
-const { Schema, model, Types } = require("mongoose");
-const slugify = require("slugify");
-const DOCUMENT_NAME = "Product";
-const COLLECTION_NAME = "Products";
+const { Schema, model, Types } = require('mongoose');
+const slugify = require('slugify');
+const DOCUMENT_NAME = 'Product';
+const COLLECTION_NAME = 'Products';
 
 const productSchema = new Schema(
   {
@@ -13,15 +13,15 @@ const productSchema = new Schema(
     product_type: {
       type: String,
       required: true,
-      enum: ["Electronics", "Clothing", "Furniture"],
+      enum: ['Electronics', 'Clothing', 'Furniture'],
     },
-    product_shop: { type: Schema.Types.ObjectId, ref: "Shop" },
+    product_shop: { type: Schema.Types.ObjectId, ref: 'Shop' },
     product_attributes: { type: Schema.Types.Mixed, required: true },
     product_ratingAverage: {
       type: Number,
       default: 4.5,
-      min: [1, "Rating must be above 1"],
-      max: [5, "Rating must be under 5"],
+      min: [1, 'Rating must be above 1'],
+      max: [5, 'Rating must be under 5'],
       set: (val) => Math.round(val * 10) / 10,
     },
     product_variations: { type: Array, default: [] },
@@ -34,11 +34,11 @@ const productSchema = new Schema(
   }
 );
 // Create index for search
-productSchema.index({ product_name: "text", product_description: "text" });
+productSchema.index({ product_name: 'text', product_description: 'text' });
 
 // Document middleware: run before .save() or .create()...
-productSchema.pre("save", (next) => {
-  console.log()
+productSchema.pre('save', (next) => {
+  console.log();
   this.product_slug = slugify(toString(this.product_name), { lower: true });
   next();
 });
@@ -48,10 +48,10 @@ const clothingSchema = new Schema(
     brand: { type: String, required: true },
     size: String,
     material: String,
-    product_shop: { type: Schema.Types.ObjectId, ref: "Shop" },
+    product_shop: { type: Schema.Types.ObjectId, ref: 'Shop' },
   },
   {
-    collection: "Clothings",
+    collection: 'Clothings',
     timestamps: true,
   }
 );
@@ -61,9 +61,9 @@ const electronicSchema = new Schema(
     manufacturer: { type: String, required: true },
     model: String,
     color: String,
-    product_shop: { type: Schema.Types.ObjectId, ref: "Shop" },
+    product_shop: { type: Schema.Types.ObjectId, ref: 'Shop' },
   },
-  { collection: "Electronics", timestamps: true }
+  { collection: 'Electronics', timestamps: true }
 );
 
 const furnitureSchema = new Schema(
@@ -71,17 +71,17 @@ const furnitureSchema = new Schema(
     manufacturer: { type: String, required: true },
     model: String,
     color: String,
-    product_shop: { type: Schema.Types.ObjectId, ref: "Shop" },
+    product_shop: { type: Schema.Types.ObjectId, ref: 'Shop' },
   },
   {
-    collection: "Furnitures",
+    collection: 'Furnitures',
     timestamps: true,
   }
 );
 
 module.exports = {
   product: model(DOCUMENT_NAME, productSchema),
-  clothing: model("Clothing", clothingSchema),
-  electronic: model("Electronic", electronicSchema),
-  furniture: model("Furniture", furnitureSchema),
+  clothing: model('Clothing', clothingSchema),
+  electronic: model('Electronic', electronicSchema),
+  furniture: model('Furniture', furnitureSchema),
 };

@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 const orderSchema = new Schema(
   {
     cartId: Number,
@@ -9,7 +9,7 @@ const orderSchema = new Schema(
     products: Array,
   },
   {
-    collection: "orders",
+    collection: 'orders',
     timestamps: true,
   }
 );
