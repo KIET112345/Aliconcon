@@ -1,11 +1,11 @@
 "use strict";
 
-import { covertToObjectIdMongodb } from "../utils";
+const {covertToObjectIdMongodb} = require("../utils");
 
 const { NotFoundError } = require("../core/error.response");
 const discount = require("../models/discount.model");
 
-export class DiscountService {
+class DiscountService {
   static async createDiscount(payload) {
     const {
       code,
@@ -62,3 +62,4 @@ export class DiscountService {
     return newDiscount;
   }
 }
+module.exports = DiscountService;
